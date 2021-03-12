@@ -11,6 +11,7 @@ li {
 
 a {
   text-decoration: none;
+  color: black
 }
 
 a:hover {
@@ -19,9 +20,18 @@ a:hover {
 }
 
 .container {
-  width: 1080px;
+  width: 960px;
   margin: 0 auto;
   padding: 80px 0;
+}
+
+.btn {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  background: #CF372C;
+  color: white;
+  text-align: center;
 }
 
 header {
@@ -74,176 +84,52 @@ header {
   display: none;
 }
 
-.firstview {
+.mv {
+  height: 250px;
   background: url('../img/mv.png') center / cover;
-  background-size: cover;
-  height: 80vh;
+}
+
+.mv__title {
   display: flex;
-  align-items: center;
-}
-
-.firstview__title {
-  font-size: 50px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-}
-
-.fistview_sub-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-}
-
-.thought {
-  color: white;
-  background: #222;
-  padding: 80px 0;
-}
-
-.thought__title {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.thought__text {
-  margin-top: 20px;
-}
-
-.top-service__title {
-  font-size: 30px;
-  text-align: center;
-}
-
-.top-service__content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.top-service__item {
-  width: 49%;
-  margin-top: 20px;
-}
-
-.top-service__item:nth-of-type(2n-1) {
-  margin-right: calc(100% - (49% * 2));
-}
-
-.top-service__image {
-  width: 100%;
-}
-
-.content__title {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.top-service__button {
-  margin: 40px auto 0;
-}
-
-.btn {
-  display: block;
-  width: 300px;
-  padding: 10px;
-  background: #CF372C;
-  color: white;
-  text-align: center;
-}
-
-.top-news {
-  background: #222;
-  color: white;
-}
-
-.top-news__title {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.top-news__head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.top-news__button {
-  width: 160px;
-  font-size: 14px;
-  padding: 7px;
-}
-
-.top-news__list {
-  margin-top: 20px;
-}
-
-.top-news__item:not(:first-child) {
-  margin-top: 10px;
-}
-
-.top-news__item-link {
-  display: flex;
-  background: white;
-  padding: 20px;
-}
-
-.top-news__item-date {
-  margin-right: 10px;
-}
-
-.top-blog__title {
-  font-size: 30px;
-  text-align: center;
-}
-
-.top-blog__list {
-  display: flex;
-  margin-top: 20px;
-}
-
-.top-blog__item {
-  width: 32%;
-  margin-right: calc((100% - (32% * 3)) / 2);
-}
-
-
-.top-blog__image img {
-  width: 100%;
-}
-
-.top-blog__button {
-  margin: 40px auto 0;
-}
-
-.top-company-list__wrap {
-  display: flex;
-  padding-bottom: 80px;
-
-}
-
-.top-company-list__item {
-  display: inline-block;
-  width: 50%;
-}
-
-.top-company-list__item a {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
   justify-content: center;
-  line-height: 10;
-  font-size: 24px;
-  font-weight: bold;
+  line-height: 280px;
+  font-size: 30px;
   color: white;
 }
 
-.top-recruit-list__link {
-  background-color: #cd0224;
+.newGraduate__contents, .career__contents {
+  width: 100%;
 }
 
-.top-company-list__link {
-  background-color: #222;
+.newGraduate__title, .career__title {
+  font-size: 26px;
+  font-weight: bold;
+  border-bottom: 1px solid #222;
+}
+
+.career__title {
+  margin-top: 90px;
+}
+
+.newGraduate__text, .career__text {
+  padding: 20px 0;
+}
+
+.newGraduate tr, .career tr {
+  border: 1px solid #222;
+}
+
+.newGraduate th, .career th {
+  width: 30%;
+  padding: 10px 0;
+  font-weight: bold;
+  background: #f5f6f9;
+}
+
+.newGraduate td, .career td {
+  width: 70%;
+  padding: 10px;
+  border-left: 1px solid #222;
 }
 
 .contact {
@@ -289,7 +175,6 @@ footer {
   content: "|";
   padding: 0 10px;
 }
-
 
 
 
@@ -374,20 +259,10 @@ footer {
   }
 
   .container {
-    width: 75%;
+    width: 85%;
   }
 
-  .top-service__item {
-    width: 100%;
-  }
-
-  .top-news__item-date, .news__item-text {
-    color: #222
-  }
-
-  .top-blog__text a {
-    color: #222;
-  }
+  
 
   .footer__item {
     display: block;
