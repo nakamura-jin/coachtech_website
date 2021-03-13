@@ -19,13 +19,13 @@ a:hover {
 }
 
 .container {
-  width: 1080px;
+  width: 75%;
   margin: 0 auto;
   padding: 80px 0;
 }
 
 header {
-  padding:0 30px;
+  padding: 0 30px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -34,7 +34,7 @@ header {
   z-index: 1;
   background: white;
   position: sticky;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
 }
@@ -61,7 +61,6 @@ header {
   color: black;
 }
 
-
 .haeder__nav-list li:not(:last-of-type) {
   margin-right: 30px;
 }
@@ -75,7 +74,7 @@ header {
 }
 
 .firstview {
-  background: url('../img/mv.png') center / cover;
+  background: url("../img/mv.png") center / cover;
   background-size: cover;
   height: 80vh;
   display: flex;
@@ -147,7 +146,7 @@ header {
   display: block;
   width: 300px;
   padding: 10px;
-  background: #CF372C;
+  background: #cf372c;
   color: white;
   text-align: center;
 }
@@ -207,7 +206,6 @@ header {
   margin-right: calc((100% - (32% * 3)) / 2);
 }
 
-
 .top-blog__image img {
   width: 100%;
 }
@@ -219,7 +217,6 @@ header {
 .top-company-list__wrap {
   display: flex;
   padding-bottom: 80px;
-
 }
 
 .top-company-list__item {
@@ -272,7 +269,7 @@ footer {
   font-size: 12px;
   flex-wrap: wrap;
   text-align: center;
-  width: 1080px;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -285,19 +282,16 @@ footer {
   color: white;
 }
 
-.footer__list li:not(:last-child):after{
+.footer__list li:not(:last-child):after {
   content: "|";
   padding: 0 10px;
 }
-
-
-
 
 @media screen and (max-width: 768px) {
   .header__nav-pc {
     display: none;
   }
-/* menu */
+  /* menu */
   .menu {
     display: inline-block;
     height: 32px;
@@ -366,7 +360,7 @@ footer {
   }
 
   .header__nav-sp--list li a {
-    color:blue;
+    color: blue;
   }
 
   .in {
@@ -374,15 +368,16 @@ footer {
   }
 
   .container {
-    width: 75%;
+    width: 85%;
   }
 
   .top-service__item {
     width: 100%;
   }
 
-  .top-news__item-date, .news__item-text {
-    color: #222
+  .top-news__item-date,
+  .news__item-text {
+    color: #222;
   }
 
   .top-blog__text a {
@@ -403,7 +398,7 @@ footer {
     padding-top: 10px;
   }
 
-  .footer__list li:not(:last-child):after{
-  content: "";
+  .footer__list li:not(:last-child):after {
+    content: "";
   }
 }
